@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   delete "/suppliers/:id" => "suppliers#destroy"
 
   post "/signup" => "users#create"
+  post "/login" => "sessions#create"
+  delete "/logout" => "sessions#destroy"
 end
